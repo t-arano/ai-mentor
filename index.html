@@ -142,13 +142,59 @@
   .cta-band h2{font-size:28px;margin-bottom:12px;}
   .cta-band p{opacity:.92;margin-bottom:26px;font-size:16px;}
 
+  /* Pain / empathy */
+  .pain{background:linear-gradient(180deg,#eef4fb,#f6f9fd);}
+  .pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:860px;margin:0 auto;}
+  .pain-card{
+    background:#fff;border:1px solid var(--line);border-radius:14px;
+    padding:22px 24px 22px 56px;position:relative;font-size:16px;font-weight:600;color:var(--ink);
+    box-shadow:0 6px 18px rgba(26,115,232,.06);
+  }
+  .pain-card::before{
+    content:"\201C";position:absolute;left:18px;top:8px;font-size:40px;line-height:1;
+    color:var(--blue);opacity:.45;font-family:Georgia,serif;
+  }
+  .pain-card small{display:block;font-weight:400;font-size:13px;color:var(--gray);margin-top:6px;}
+  .pain-close{
+    text-align:center;margin-top:38px;font-size:20px;font-weight:800;color:var(--blue-dark);
+  }
+  .pain-close .hl{
+    background:linear-gradient(transparent 62%,#ffe27a 62%);padding:0 4px;
+  }
+
+  /* Cases */
+  .cases{background:#fff;}
+  .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .case-card{
+    border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;
+    display:flex;flex-direction:column;transition:.2s;
+  }
+  .case-card:hover{box-shadow:0 14px 34px rgba(26,115,232,.12);transform:translateY(-3px);}
+  .case-top{background:linear-gradient(135deg,#0b4eb0,#1a73e8);color:#fff;padding:20px 22px;}
+  .case-top .scale{font-size:13px;font-weight:700;opacity:.9;}
+  .case-top .biz{font-size:19px;font-weight:800;margin-top:2px;}
+  .case-top .course{
+    display:inline-block;margin-top:10px;background:rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.4);padding:3px 12px;border-radius:999px;font-size:12px;font-weight:700;
+  }
+  .case-body{padding:22px;display:flex;flex-direction:column;gap:14px;flex:1;}
+  .case-block .label{font-size:12px;font-weight:800;letter-spacing:.04em;margin-bottom:4px;}
+  .case-block.before .label{color:#d9534f;}
+  .case-block.after .label{color:var(--blue);}
+  .case-block p{font-size:14px;color:var(--gray);}
+  .case-result{
+    margin-top:auto;background:var(--blue-light);border-radius:12px;padding:14px 16px;
+    font-size:14px;font-weight:700;color:var(--blue-dark);text-align:center;
+  }
+
   /* Footer */
   footer{background:#0e1b2a;color:#9fb2c6;padding:36px 0;text-align:center;font-size:14px;}
   footer .fl{color:#fff;font-weight:700;margin-bottom:6px;}
 
   @media(max-width:720px){
     .hero h1{font-size:28px;}
-    .grid,.merit-list,.plans{grid-template-columns:1fr;}
+    .grid,.merit-list,.plans,.pain-grid,.case-grid{grid-template-columns:1fr;}
+    .pain-close{font-size:17px;}
     .sec-head .ja{font-size:24px;}
     .header-cta{display:none;}
   }
@@ -175,6 +221,35 @@
     </div>
   </div>
 </div>
+
+<!-- Pain / empathy -->
+<section class="pain">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">CHECK</span>
+      <span class="ja">こんなお悩み、ありませんか？</span>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card">
+        AIは個人では使っているけど、業務にどう活かせばいいか分からない…
+        <small>ChatGPTは触っているが、仕事の成果につながっていない。</small>
+      </div>
+      <div class="pain-card">
+        研修は受けたけど、現場で活用しきれていない…
+        <small>学んだはずなのに、日々の業務では結局これまで通り。</small>
+      </div>
+      <div class="pain-card">
+        何から手をつければいいか分からず、後回しになっている…
+        <small>やった方がいいのは分かっているが、最初の一歩が踏み出せない。</small>
+      </div>
+      <div class="pain-card">
+        社内に詳しい人がいなくて、質問できる相手がいない…
+        <small>つまずいたときに聞ける相手がおらず、止まってしまう。</small>
+      </div>
+    </div>
+    <p class="pain-close">そのお悩み、<span class="hl">AIメンターが伴走して解決します。</span></p>
+  </div>
+</section>
 
 <!-- Intro -->
 <section class="intro">
@@ -245,6 +320,76 @@
         <div class="ic">🎯</div>
         <h4>貴社に合わせた助言</h4>
         <p>各社の業務フローに合わせた具体的なアドバイスを行います。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cases -->
+<section class="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">CASE STUDY</span>
+      <span class="ja">導入事例</span>
+      <span class="lead">5名・20名・50名——会社規模に関わらず、AI活用が定着しています。</span>
+    </div>
+    <div class="case-grid">
+      <!-- 5名 -->
+      <div class="case-card">
+        <div class="case-top">
+          <div class="scale">住宅会社｜従業員5名</div>
+          <div class="biz">少人数で業務が回らない</div>
+          <span class="course">DX Boost 受講</span>
+        </div>
+        <div class="case-body">
+          <div class="case-block before">
+            <div class="label">BEFORE</div>
+            <p>従業員が少なく業務が回っていなかったためAI活用を狙って研修を受けたものの、現場では使いこなせていなかった。</p>
+          </div>
+          <div class="case-block after">
+            <div class="label">AFTER</div>
+            <p>見積書作成や問い合わせ対応の文章をAIで自動化。少人数でも事務に追われず、営業に集中できる体制に。</p>
+          </div>
+          <div class="case-result">1人あたり月約20時間の事務作業を削減</div>
+        </div>
+      </div>
+      <!-- 20名 -->
+      <div class="case-card">
+        <div class="case-top">
+          <div class="scale">会計事務所｜従業員20名</div>
+          <div class="biz">一部の社員しか使えない</div>
+          <span class="course">Sales Boost 受講</span>
+        </div>
+        <div class="case-body">
+          <div class="case-block before">
+            <div class="label">BEFORE</div>
+            <p>研修後も一部の社員だけがAIを使う状態で、社内に活用が浸透せず属人化していた。</p>
+          </div>
+          <div class="case-block after">
+            <div class="label">AFTER</div>
+            <p>定期的な活用状況チェックと事例共有で、全社員がAIを日常的に使う文化が定着。資料作成・メール対応を効率化。</p>
+          </div>
+          <div class="case-result">資料・メール業務の時間を約40%短縮</div>
+        </div>
+      </div>
+      <!-- 50名 -->
+      <div class="case-card">
+        <div class="case-top">
+          <div class="scale">製造業｜従業員50名</div>
+          <div class="biz">部署ごとにバラバラで成果が出ない</div>
+          <span class="course">AIメンターPRO 導入</span>
+        </div>
+        <div class="case-body">
+          <div class="case-block before">
+            <div class="label">BEFORE</div>
+            <p>複数部署で個別にAIを試していたが連携できず、成果につながらないまま時間だけが過ぎていた。</p>
+          </div>
+          <div class="case-block after">
+            <div class="label">AFTER</div>
+            <p>AIメンターPROで自社専用の業務ツールを開発・伴走。受発注管理を自動化し、部署横断でAI活用が前進。</p>
+          </div>
+          <div class="case-result">月間100時間以上の工数削減を実現</div>
+        </div>
       </div>
     </div>
   </div>
