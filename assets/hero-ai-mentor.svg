@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
-  <title id="title">AIメンターのサポートイメージ</title>
+  <title id="title">AIコーチのサポートイメージ</title>
   <desc id="desc">AI相談、業務整理、ツール化支援を表すダッシュボード風のイラスト</desc>
   <defs>
     <linearGradient id="bg" x1="98" y1="42" x2="662" y2="520" gradientUnits="userSpaceOnUse">
@@ -39,7 +39,7 @@
     <text x="154" y="247" fill="#8A98A8" font-family="Arial, sans-serif" font-size="14">でも何から始めれば…？</text>
 
     <rect x="390" y="202" width="244" height="92" rx="22" fill="#E8F1FE"/>
-    <text x="420" y="234" fill="#0B4EB0" font-family="Arial, sans-serif" font-size="17" font-weight="700">AIメンターが伴走</text>
+    <text x="420" y="234" fill="#0B4EB0" font-family="Arial, sans-serif" font-size="17" font-weight="700">AIコーチが伴走</text>
     <text x="420" y="262" fill="#1A73E8" font-family="Arial, sans-serif" font-size="14" font-weight="700">業務に合わせて活用方法を提案</text>
   </g>
 
@@ -57,7 +57,7 @@
     <path d="M68 73 Q78 80 88 73" fill="none" stroke="#1A73E8" stroke-width="4" stroke-linecap="round"/>
     <path d="M78 33 V22" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
     <circle cx="78" cy="17" r="7" fill="#FFD24D"/>
-    <text x="126" y="52" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="800">AI Mentor</text>
+    <text x="126" y="52" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="800">AI Coach</text>
     <text x="126" y="81" fill="#D9F7FF" font-family="Arial, sans-serif" font-size="15" font-weight="700">相談からツール化まで</text>
   </g>
 
